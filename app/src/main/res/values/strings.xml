@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Quady</string>
+    <string name="button">Solve</string>
+    <string name="button2">Clear</string>
+    <string name="a">a</string>
+    <string name="b">b</string>
+    <string name="c">c</string>
+</resources>
