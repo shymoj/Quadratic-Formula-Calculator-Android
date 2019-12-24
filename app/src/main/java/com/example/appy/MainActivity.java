@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
                         String ee = ta + "_" + tb + "_" + tc;
                         if(quad < 0){
                             DatabaseReference myRef = database.getReference("Not Quad");
-                            Toast.makeText(getApplicationContext(), ("CANNOT SOLVE: Not Quad"), Toast.LENGTH_LONG).show();
+                            Toast.makeText(getApplicationContext(), ("CANNOT SOLVE! Not Quad"), Toast.LENGTH_LONG).show();
                             myRef.child(ee).child("a").setValue(a);
                             myRef.child(ee).child("b").setValue(b);
                             myRef.child(ee).child("c").setValue(c);
@@ -79,8 +79,8 @@ public class MainActivity extends AppCompatActivity {
                             myRef.child(ee).child("q1").setValue(pq);
                             myRef.child(ee).child("q2").setValue(nq);
 
-
-                            Toast.makeText(getApplicationContext(), ("SOLVED: q1 = " + pq + " q2 = " + nq), Toast.LENGTH_LONG).show();
+                            Toast.makeText(getApplicationContext(), ("SOLVED!"), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), (" q1 = " + pq + " q2 = " + nq), Toast.LENGTH_LONG).show();
                             //Toast.makeText(getApplicationContext(), et2.getText().toString(), Toast.LENGTH_LONG).show();
                             //Toast.makeText(getApplicationContext(), et3.getText().toString(), Toast.LENGTH_LONG).show();//display the text that you entered in edit text
                         }
